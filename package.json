@@ -1,0 +1,17 @@
+{
+  "name": "rest1",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Patrick Varkoi",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
