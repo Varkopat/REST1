@@ -1,3 +1,2 @@
 auto car
 talo house
-pyörä bike
