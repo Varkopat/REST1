@@ -1,9 +1,16 @@
+/* Description: A simple Express server for a Finnish-English dictionary application.
+The server allows users to retrieve all words, add new words, and get the English translation of a Finnish word.
+It uses a text file (sanakirja.txt) to store the word pairs and supports CORS for cross-origin requests. */
+
+// Initialize the dictionary array and import necessary modules
 let dictionary = [];
 const express = require("express");
 const fs = require("fs");
+
 //const bodyParser = require("body-parser");
 /* const app = express().use(bodyParser.json()); //vanha tapa - ei enää voimassa. 
 kts. https://devdocs.io/express/ -> req.body*/
+
 let app = express();
 
 // Ota käyttöön JSON- ja urlencoded-datan käsittely
@@ -86,6 +93,8 @@ app.post("/words", (req, res) => {
     dictionary.push({ fin, eng });
     // Palauta lisätty sana
     res.status(201).json({ fin, eng });
+    // Tulosta sanakirja konsoliin
+    console.log({ fin, eng });
   });
 });
 
@@ -112,6 +121,7 @@ app.get("/words/:fin", (req, res) => {
   // Palauta käännös tai virheilmoitus
   if (found) {
     res.json(found);
+    console.log(found);
   } else {
     res.status(404).json({ message: "Word not found" });
   }

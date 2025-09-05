@@ -1,2 +1,7 @@
 auto car
 talo house
+tietokone computer
+koodari coder
+koodi code
+tohtori doctor
+hiiri mouse
