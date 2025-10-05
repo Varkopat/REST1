@@ -22,3 +22,5 @@ Tiedoston käsittelyä varten tarvitset fs moduulin ( require("fs")).
 Em. moduulista löytyy esim. metodi writeFileSync kirjoitusta varten ja readFileSync lukemista varten.
 
 (Tiedoston käsittely voi olla synkroninen tai asynkroninen - saa valita).
+
+valikkosovellus-kansiossa on sovelluksen front end -koodi, joka on tehty Reactilla.
