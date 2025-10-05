@@ -5,3 +5,4 @@ koodari coder
 koodi code
 tohtori doctor
 hiiri mouse
+puhelin phone
